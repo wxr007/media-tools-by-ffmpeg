@@ -40,7 +40,8 @@
 * __ffmpeg 4.1.3__ （针对Mac系统）
 
 ### 安装windows版本的FFmpeg
-下载安装
+
+*下载安装
 
 https://ffmpeg.zeranoe.com/builds/
 
