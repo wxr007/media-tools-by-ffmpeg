@@ -39,6 +39,11 @@
 * __ffmpeg 4.1.1__ （针对Linux系统）
 * __ffmpeg 4.1.3__ （针对Mac系统）
 
+### 安装windows版本的FFmpeg
+下载安装：
+https://ffmpeg.zeranoe.com/builds/
+https://ffmpeg.zeranoe.com/builds/win64/static/
+
 ### 安装Linux版本的FFmpeg
 
 * 安装
