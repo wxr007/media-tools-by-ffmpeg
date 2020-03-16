@@ -1,100 +1,100 @@
-# Video and Audio Processing/Editing
+# 视频和音频处理/剪辑
 
 [![image](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/HeZhang1994/video-audio-tools/blob/master/LICENSE)
 [![image](https://img.shields.io/badge/python-3.7-blue.svg)]()
 [![image](https://img.shields.io/badge/status-stable-brightgreen.svg)]()
 
-[*English Version*](https://github.com/HeZhang1994/video-audio-tools/blob/master/README.md) | [*中文版*](https://github.com/HeZhang1994/video-audio-tools/blob/master/README-cn.md)
+[*English Version*](https://github.com/wxr007/media-tools-by-ffmpeg/blob/master/README-en.md) | [*中文版*](https://github.com/wxr007/media-tools-by-ffmpeg/blob/master/README.md)
 
-This is a **Python** implementation of processing/editing video and audio with **FFmpeg** libraries.
+基于**Python**和**FFmpeg库**实现的处理/剪辑视频和音频。
 
-Many thanks to FFmpeg and its contributors. For more related information, please visit [FFmpeg website](https://www.ffmpeg.org/).
+特别感谢FFmpeg及其贡献者。关于更多相关内容，请访问[FFmpeg网站](https://www.ffmpeg.org/)。
 
-## Table of Contents
+## 目录
 
-- [Functions](#functions)
-- [Dependencies](#dependencies)
-  - [Install FFmpeg for Linux](#install-ffmpeg-for-linux)
-  - [Install FFmpeg for Mac](#install-ffmpeg-for-mac)
-- [Usage](#usage)
-  - [Video and Audio Processing](#video-and-audio-processing)
-  - [Video and Audio Editing](#video-and-audio-editing)
+- [功能](#功能)
+- [依赖项](#依赖项)
+  - [安装Linux版本的FFmpeg](#安装linux版本的ffmpeg)
+  - [安装Mac版本的FFmpeg](#安装mac版本的ffmpeg)
+- [使用方法](#使用方法)
+  - [视频和音频处理](#视频和音频处理)
+  - [视频和音频剪辑](#视频和音频剪辑)
 
-## Functions
+## 功能
 
-- **Extracting** the audio from a video.
+- **提取**视频中的音频。
 
-- **Adding** the audio to a video that contains no audio.
+- **添加**音频到不含音频的视频。
 
-- **Removing** the audio from a video.
+- **删除**视频中的音频。
 
-- **Converting** the format of audio.
+- **转换**音频的格式。
 
-- **Cutting** video or audio into clips.
+- **剪切**视频或音频为片段。
 
-- **Merging** video or audio clips.
+- **拼接**视频或音频的片段。
 
-## Dependencies
+## 依赖项
 
-* __ffmpeg 4.1.1__ (for Linux)
-* __ffmpeg 4.1.3__ (for Mac)
+* __ffmpeg 4.1.1__ （针对Linux系统）
+* __ffmpeg 4.1.3__ （针对Mac系统）
 
-### Install FFmpeg for Linux
+### 安装Linux版本的FFmpeg
 
-* Installation
+* 安装
 ```bash
 $ sudo apt-get install ffmpeg
 ```
 
-* Upgrade (if applicable)
+* 更新（如果适用）
 ```bash
-# The latest version of FFmpeg is 4.1.x (11th April 2019).
+# FFmpeg的最新版本为4.1.x（2019年4月11日）。
 $ sudo add-apt-repository ppa:jonathonf/ffmpeg-4
 $ sudo apt update && sudo apt upgrade
 ```
 
-### Install FFmpeg for Mac
+### 安装Mac版本的FFmpeg
 
-* Installation
+* 安装
 ```bash
-# Install homebrew.
+# 安装homebrew。
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-# Install FFmpeg via homebrew.
+# 通过homebrew安装FFmpeg。
 $ brew install ffmpeg
 ```
 
-* Upgrade (if applicable)
+* 更新（如果适用）
 ```bash
-# Upgrade FFmpeg via homebrew.
+# 通过homebrew更新FFmpeg。
 $ brew update && brew upgrade ffmpeg
 ```
 
-## Usage
+## 使用方法
 
-Specify the path/name of input and output media in the code (see comments).
+参考程序注释，设置输入和输出多媒体文件的文件名/路径。
 
-### Video and Audio Processing
+### 视频和音频处理
 
-Please use the code provided in `VideoAudio_Processing/`.
+请使用`VideoAudio_Processing/`中提供的程序。
 
-- To **extract** the audio from a video, run `run_VAP_extract.py`.
+- 运行`run_VAP_extract.py`，**提取**视频中的音频。
 
-- To **add** the audio to a video, run `run_VAP_add.py`.
+- 运行`run_VAP_add.py`，**添加**音频到视频。
 
-- To **remove** the audio from a video, run `run_VAP_remove.py`.
+- 运行`run_VAP_remove.py`，**删除**视频中的音频。
 
-- To **convert** the format of audio, run `run_VAP_convert.py`.
+- 运行`run_VAP_convert.py`，**转换**音频的格式。
 
-### Video and Audio Editing
+### 视频和音频剪辑
 
-Please use the code provided in `VideoAudio_Editing/`.
+请使用`VideoAudio_Editing/`中提供的程序。
 
-- To **cut** video or audio into clips, run `run_VAE_Video_01Clip.py` or `run_VAE_Audio_01Clip.py`.
+- 运行`run_VAE_Video_01Clip.py`或`run_VAE_Audio_01Clip.py`，**剪切**视频或音频为片段。
 
-- To **merge** video or audio clips, run `run_VAE_Video_02Merge.py` or `run_VAE_Audio_02Merge.py`.
+- 运行`run_VAE_Video_02Merge.py`或`run_VAE_Audio_02Merge.py`，**拼接**视频或音频的片段。
 
 <br>
 
-<i>Please report an issue if you have any question about this repository, I will respond ASAP.</i>
+<i>如果您对该项目有任何问题，请报告issue，我将会尽快回复。</i>
 
-<i>Please star this repository if you found its content useful. Thank you very much. ^_^</i>
+<i>如果该项目对您有帮助，请为其加星支持哈，非常感谢。^_^</i>
