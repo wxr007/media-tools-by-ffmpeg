@@ -41,8 +41,8 @@
 
 ### 安装windows版本的FFmpeg
 下载安装：
--https://ffmpeg.zeranoe.com/builds/
--https://ffmpeg.zeranoe.com/builds/win64/static/
+请访问[FFmpeg网站](https://ffmpeg.zeranoe.com/builds/)
+请访问[FFmpeg-download网站(-https://ffmpeg.zeranoe.com/builds/win64/static/)
 
 ### 安装Linux版本的FFmpeg
 
