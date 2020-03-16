@@ -41,7 +41,7 @@
 
 ### 安装windows版本的FFmpeg
 
-*下载安装
+* 下载安装
 
 https://ffmpeg.zeranoe.com/builds/
 
