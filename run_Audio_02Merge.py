@@ -1,5 +1,6 @@
-'''Merge video clips with FFmpeg (4.1.x).
-
+ # encoding:utf-8
+'''Merge audio clips with FFmpeg (4.1.x).
+音频合并
 Author: He Zhang @ University of Exeter
 Date: 16th April 2019 (Update: 18th April 2019)
 Contact: hz298@exeter.ac.uk zhangheupc@126.com
@@ -13,12 +14,12 @@ import os
 import subprocess
 
 
-def get_file_names(file_path, file_type='.mp4'):
+def get_file_names(file_path, file_type='.mp3'):
     '''Function: Get the name of files with specified type in a folder.
 
     Parameters:
         file_path <str> -- The path of files.
-        file_type <str> -- The type of files. Default is '.mp4'.
+        file_type <str> -- The type of files. Default is '.mp3'.
 
     Return:
         file_names <list> -- The name of files with extension.
@@ -36,9 +37,9 @@ def get_file_names(file_path, file_type='.mp4'):
 # Part 1 Set the path of input and output media.
 
 PATH_MEDIA = 'Media/'
-PATH_CLIPS = 'Clips_Video/'
-FILE_CLIPS = 'List_Video.txt'
-FILE_MERGE = PATH_MEDIA + 'Demo_new.mp4'
+PATH_CLIPS = 'Clips_Audio/'
+FILE_CLIPS = 'List_Audio.txt'
+FILE_MERGE = PATH_MEDIA + 'Demo_new.mp3'
 
 # Check if the output file exists. If so, delete it for overwriting.
 if os.path.isfile(FILE_MERGE) is True:

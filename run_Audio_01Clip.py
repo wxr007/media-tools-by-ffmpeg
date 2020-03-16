@@ -1,5 +1,6 @@
-'''Cut video into clips with FFmpeg (4.1.x).
-
+﻿ # encoding:utf-8
+'''Cut audio into clips with FFmpeg (4.1.x).
+音频剪辑
 Author: He Zhang @ University of Exeter
 Date: 16th April 2019 (Update: 18th April 2019)
 Contact: hz298@exeter.ac.uk zhangheupc@126.com
@@ -51,11 +52,11 @@ def calc_time_diff(time1_str, time2_str):  # Not used in this code!
 
 # Part 1 Set the path of input and output media.
 
-INPUT_MEDIA = 'Media/Demo.mp4'
+INPUT_MEDIA = 'Media/Demo.mp3'
 # Download link: Null (The length of input video in this demo should be longer than 12min).
-OUTPUT_PATH = 'Media/Clips_Video/'
+OUTPUT_PATH = 'Media/Clips_Audio/'
 OUTPUT_NAME = 'Clip_'
-OUTPUT_TYPE = '.mp4'
+OUTPUT_TYPE = '.mp3'
 
 # Check if the output folder exists. If so, delete it and create an empty one.
 if os.path.exists(OUTPUT_PATH) is True:

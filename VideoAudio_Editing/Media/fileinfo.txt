@@ -1,3 +1,0 @@
-Do not delete the following source files:
-    - Demo.mp3
-    - Demo.mp4

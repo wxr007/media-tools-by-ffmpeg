@@ -1,5 +1,6 @@
+ # encoding:utf-8
 '''Remove audio from video with FFmpeg (4.1.x).
-
+从视频中删除音频
 Author: He Zhang @ University of Exeter
 Date: 16th April 2019 (Update: 18th April 2019)
 Contact: hz298@exeter.ac.uk zhangheupc@126.com
